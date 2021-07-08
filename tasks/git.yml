@@ -1,0 +1,11 @@
+---
+
+- name: 'Install git'
+  apt:
+    name: 'git'
+    state: 'present'
+
+- name: 'Git clone'
+  git:
+    repo: 'https://github.com/arsenbig/web-application-epam.git'
+    dest: /opt/web-application-epam

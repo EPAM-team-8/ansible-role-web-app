@@ -1,0 +1,9 @@
+---
+- name: 'Install Git & Clone repo'
+  include_tasks: 'git.yml'
+
+- name: 'Install angular & build web app'
+  include_tasks: 'angular.yml'
+
+- name: 'Create service'
+  include_tasks: 'systemd.yml'

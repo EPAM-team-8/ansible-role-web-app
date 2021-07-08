@@ -2,7 +2,7 @@
 
 - name: 'Copy service'
   copy:
-    src: /home/arsen/project-ansible/roles/systemd/res/web-app.service
+    src: /home/arsen/EPAM-team-8/ansible-role-web-app/templates/web-app.service
     dest: /lib/systemd/system
     owner: root
     group: root
