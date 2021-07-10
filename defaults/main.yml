@@ -1,2 +1,3 @@
 ---
-# defaults file for zzz
+
+ng_path: '/usr/local/bin/ng'

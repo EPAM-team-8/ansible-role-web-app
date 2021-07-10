@@ -1,9 +1,9 @@
 ---
 
-- name: 'Copy service'
-  copy:
-    src: /home/arsen/EPAM-team-8/ansible-role-web-app/templates/web-app.service
-    dest: /lib/systemd/system
+- name: 'Create service'
+  template:
+    src: 'web-app.service.j2'
+    dest: '/etc/systemd/system/web-app.service'
     owner: root
     group: root
 
