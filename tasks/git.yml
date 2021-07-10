@@ -2,7 +2,6 @@
 
 - name: 'Install git'
   apt:
-    force: yes
     name: 'git'
     state: 'present'
 
@@ -10,4 +9,4 @@
   git:
     repo: 'https://github.com/arsenbig/web-application-epam.git'
     dest: '/opt/web-application-epam'
-  force: yes
+    force: yes
