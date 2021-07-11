@@ -9,7 +9,6 @@
 - name: 'Clear npm cache'
   shell:
      "sudo npm cache clean -f"
-  changed_when: false
 
 - name: 'Install n'
   npm:
@@ -20,7 +19,6 @@
 - name: 'Make n stable'
   shell:
      "sudo n stable"
-  changed_when: false
 
 - name: 'Install AngularCLI'
   npm:
