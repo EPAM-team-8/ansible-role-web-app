@@ -1,0 +1,16 @@
+---
+
+- name: 'Create service'
+  template:
+    src: 'web-app.service.j2'
+    dest: '/etc/systemd/system/web-app.service'
+    owner: root
+    group: root
+
+- name: 'Enable/Start Service'
+  systemd:
+    name: 'web-app'
+    daemon_reload: yes
+    enabled: yes
+    state: 'started'
+  notify: 'Restart service'
