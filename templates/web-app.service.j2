@@ -4,7 +4,7 @@ Description=web-app
 [Service]
 Type=simple
 User=root
-ExecStart={{ ng_path }} serve --host 0.0.0.0
+ExecStart={{ ng_path }} serve --host "0.0.0.0" --disable-host-check
 WorkingDirectory=/opt/web-application-epam
 Restart=on-failure
 
